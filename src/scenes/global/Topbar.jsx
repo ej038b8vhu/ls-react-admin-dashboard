@@ -1,4 +1,5 @@
 //Box is div-liked, could set css property directly
+//for other mui components use sx={{  ml: 2, flex: 1 }} instead
 import { Box, IconButton, useTheme } from '@mui/material';
 import { useContext } from 'react';
 import { ColorModeContext, tokens } from '../../theme';
@@ -11,7 +12,8 @@ import PersonOutlinedIcon from '@mui/icons-material/PersonOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 
 const Topbar = () => {
-  const theme = useTheme(); //get theme from material ui ThemeProvider
+  //get theme from material ui ThemeProvider
+  const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
 

@@ -1,5 +1,6 @@
 import { ColorModeContext, useMode } from './theme';
-//CssBaseline reset css to default / ThemeProvider pass the theme to material UI
+//CssBaseline reset css to default.
+//ThemeProvider pass the theme to material UI.
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { Routes, Route } from 'react-router-dom';
 import Topbar from './scenes/global/Topbar';

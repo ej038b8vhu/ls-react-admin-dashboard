@@ -6,6 +6,9 @@ export const tokens = (mode) => ({
   ...(mode === 'dark'
     ? {
         grey: {
+          //use Tailwind Shades extension
+          //select one hex color code and press cmd+k cmd+g
+          //to create other color shade base on the hex color
           100: '#e0e0e0',
           200: '#c2c2c2',
           300: '#a3a3a3',
@@ -16,6 +19,7 @@ export const tokens = (mode) => ({
           800: '#292929',
           900: '#141414',
         },
+        //blueish
         primary: {
           100: '#d0d1d5',
           200: '#a1a4ab',
@@ -63,6 +67,8 @@ export const tokens = (mode) => ({
       }
     : {
         grey: {
+          //use cmd+shift+p
+          //enter Sort Lines Descending
           100: '#141414',
           200: '#292929',
           300: '#3d3d3d',
@@ -129,6 +135,7 @@ export const themeSettings = (mode) => {
       mode: mode,
       ...(mode === 'dark'
         ? {
+            //way to use in component: color="primary"
             primary: {
               main: colors.primary[500],
             },
@@ -140,6 +147,7 @@ export const themeSettings = (mode) => {
               main: colors.grey[500],
               light: colors.grey[100],
             },
+            //actually used in enviroment
             background: {
               default: colors.primary[500],
             },
@@ -162,8 +170,11 @@ export const themeSettings = (mode) => {
           }),
     },
     typography: {
+      //default font setting for mui
       fontFamily: ['Source Sans Pro', 'sans-serif'].join(','),
       fontSize: 12,
+      //set up each heading tag
+      ///way to use in <Typography> component: variant="h2"
       h1: {
         fontFamily: ['Source Sans Pro', 'sans-serif'].join(','),
         fontSize: 40,
@@ -192,12 +203,14 @@ export const themeSettings = (mode) => {
   };
 };
 
-//context for color mode
+//create Context Provider for color mode
 export const ColorModeContext = createContext();
 
 export const useMode = () => {
+  //state to save current mode
   const [mode, setMode] = useState('dark');
 
+  //create a function to hold a method to change state trigger re-render
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () =>
@@ -206,7 +219,7 @@ export const useMode = () => {
     [],
   );
 
-  //create the theme from material UI
+  //create a theme obj from mui for later use
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
   return [theme, colorMode];
 };
