@@ -51,7 +51,7 @@ const Sidebar = () => {
           backgroundColor: 'transparent !important',
         },
         '& .pro-inner-item': {
-          padding: '0px 35px 0px 20px !important',
+          padding: '0px 25px 0px 12px !important',
         },
         '& .pro-inner-item:hover': {
           color: '#868dfd !important',
@@ -116,7 +116,7 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: '10px 0 0 0' }}
                 >
-                  Finn Lecter
+                  Jake
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
                   VP Fancy Admin
