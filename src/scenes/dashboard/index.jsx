@@ -23,7 +23,7 @@ const Dashboard = () => {
     <Box
       m="-80px 20px 0 20px"
       sx={{
-        transform: 'scale(1, 0.8)',
+        transform: isNonMobile ? 'scale(1, 0.8)' : 'scale(1, 0.92)',
       }}
     >
       <Box display="flex" justifyContent="space-between" alignItems="center">

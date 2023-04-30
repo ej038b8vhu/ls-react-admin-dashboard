@@ -2,6 +2,7 @@ import { useTheme } from '@mui/material';
 import { ResponsiveChoropleth } from '@nivo/geo';
 //geography map set
 //https://github.com/plouc/nivo/blob/master/website/src/data/components/geo/world_countries.json?short_path=f03ddc9
+import useMediaQuery from '@mui/material/useMediaQuery';
 import { geoFeatures } from '../data/mockGeoFeatures';
 import { tokens } from '../theme';
 import { mockGeographyData as data } from '../data/mockData';
@@ -9,6 +10,7 @@ import { mockGeographyData as data } from '../data/mockData';
 const GeographyChart = ({ isDashboard = false }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  const isNonMobile = useMediaQuery('(min-width: 800px)');
 
   return (
     <ResponsiveChoropleth
@@ -63,7 +65,7 @@ const GeographyChart = ({ isDashboard = false }) => {
       // enableGraticule={true}
       // graticuleLineColor="#dddddd"
       legends={
-        isDashboard
+        isDashboard || !isNonMobile
           ? undefined
           : [
               {
