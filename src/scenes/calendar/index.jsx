@@ -1,7 +1,7 @@
 import { useState } from 'react';
-// must go before plugins
+// must import before plugins
 import FullCalendar from '@fullcalendar/react';
-//formatDate import from core to prevent erro
+//import formatDate from core to prevent error
 import { formatDate } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
