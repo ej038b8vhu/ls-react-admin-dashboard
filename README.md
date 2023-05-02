@@ -31,6 +31,12 @@ Mainly you use:
 - [react-router](https://reactrouter.com/en/main)
 
   - HashRouter for route
+  
+- VScode extension
+  - [Tailwind Shade] to convert hex code to more shade (cmd+k cmd+g)
+
+- Chrome extension
+  - [Toogle Pastiside] to look up css grid layout on specific page
 
   ***
 
