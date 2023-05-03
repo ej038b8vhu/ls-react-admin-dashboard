@@ -49,7 +49,7 @@ const Invoices = () => {
     <Box m="20px">
       <Header title="INVOICES" subtitle="List of Invoices Balances" />
       <Box
-        height="75vh"
+        height="80vh"
         //overwrite mui DataGrid default css
         sx={{
           '& .MuiDataGrid-root': {

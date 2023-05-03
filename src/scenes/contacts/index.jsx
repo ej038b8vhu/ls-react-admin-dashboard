@@ -59,7 +59,7 @@ const Contacts = () => {
         subtitle="List of contacts for future Reference"
       />
       <Box
-        height="75vh"
+        height="80vh"
         //overwrite mui DataGrid default css
         sx={{
           '& .MuiDataGrid-root': {

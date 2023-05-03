@@ -3,7 +3,6 @@ import { ColorModeContext, useMode } from './theme';
 //ThemeProvider pass the theme to material UI.
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { Routes, Route } from 'react-router-dom';
-import Topbar from './scenes/global/Topbar';
 import Sidebar from './scenes/global/Sidebar';
 import Dashboard from './scenes/dashboard';
 import Team from './scenes/team';
@@ -26,7 +25,6 @@ function App() {
         <div className="app">
           <Sidebar />
           <main className="content">
-            <Topbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />

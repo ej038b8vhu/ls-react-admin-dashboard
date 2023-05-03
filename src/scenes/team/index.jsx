@@ -76,7 +76,7 @@ const Team = () => {
     <Box m="20px">
       <Header title="TEAM" subtitle="Managing the Team Members" />
       <Box
-        height="75vh"
+        height="80vh"
         //overwrite mui DataGrid default css
         sx={{
           '& .MuiDataGrid-root': {
