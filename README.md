@@ -1,4 +1,5 @@
-# [React-Admin-Dashboard](https://jake-dashboard.netlify.app/)
+# [React Admin Dashboard](https://jake-dashboard.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f342756f-e134-4be6-85a0-fb6967436242/deploy-status)](https://app.netlify.com/sites/jake-dashboard/deploys)
 
 Hi Finn,
 
