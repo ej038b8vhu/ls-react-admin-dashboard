@@ -41,6 +41,12 @@ Mainly you use:
 - Chrome extension
 
   - [Toogle Pastiside] to look up css grid layout on specific page
+      
+
+- ### Migrate to Vite from Create React App (CRA)
+
+  - reduce project physical size
+  - [step refer to](https://www.robinwieruch.de/vite-create-react-app/)
 
   ***
 
@@ -48,9 +54,4 @@ Best regards
 
 Finn from the past
 
----
 
-### Migrate to Vite from Create React App (CRA)
-
-- Reduce project physical size.
-- [step refer to](https://www.robinwieruch.de/vite-create-react-app/)
