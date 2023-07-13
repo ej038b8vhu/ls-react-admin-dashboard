@@ -1,4 +1,5 @@
 # [React Admin Dashboard](https://jake-dashboard.netlify.app/)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f342756f-e134-4be6-85a0-fb6967436242/deploy-status)](https://app.netlify.com/sites/jake-dashboard/deploys)
 
 Hi Finn,
@@ -32,11 +33,13 @@ Mainly you use:
 - [react-router](https://reactrouter.com/en/main)
 
   - HashRouter for route
-  
+
 - VScode extension
+
   - [Tailwind Shade] to convert hex code to more shade (cmd+k cmd+g)
 
 - Chrome extension
+
   - [Toogle Pastiside] to look up css grid layout on specific page
 
   ***
@@ -44,3 +47,10 @@ Mainly you use:
 Best regards
 
 Finn from the past
+
+---
+
+### Migrate to Vite from Create React App (CRA)
+
+- Reduce project physical size.
+- [step refer to](https://www.robinwieruch.de/vite-create-react-app/)
